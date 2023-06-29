@@ -12,7 +12,7 @@ password: {
 },
 role: {
     type:String,
-    required: true
+    default:"user"
 }
 })
 

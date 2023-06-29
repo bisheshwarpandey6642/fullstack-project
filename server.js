@@ -5,9 +5,12 @@ const session = require('express-session')
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
 
 const app = express()
+
+app.use(cors())
 
 app.use(bodyParser.json())
 
