@@ -173,7 +173,7 @@ app.post('/save', isAuthenticated, async (req, res) => {
 
 
 // database connection
-mongoose.connect('mongodb://localhost:27017/mydatabase', {
+mongoose.connect('mongodb+srv://user:user@cluster0.z69u4u1.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
@@ -184,7 +184,7 @@ mongoose.connect('mongodb://localhost:27017/mydatabase', {
 
 
 //create server
-app.listen(8080, () => {
+app.listen(8000, () => {
     console.group("Server is up and running")
 })
 

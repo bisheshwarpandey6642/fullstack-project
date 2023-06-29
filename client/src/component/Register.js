@@ -4,8 +4,8 @@ import React, {useState} from 'react';
 function Register() {
 
     //const history = useHistory
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
 
     const handleUsernameChange = (event) => {
